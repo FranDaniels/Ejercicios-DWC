@@ -46,7 +46,9 @@ numerosAleatorios.forEach((numero, indice) => {
 
 var numerosUnicos = [new Set(numerosAleatorios)]; //Creamos un array sin numeros repetidos
 
-numerosUnicos.sort();//Los ordenamos de menor a mayor
+numerosUnicos.sort(function(a,b){
+    return a-b
+});//Los ordenamos de menor a mayor
 
 //Ejercicio 5 b
 console.log("Números únicos ordenados de menor a mayor:");
