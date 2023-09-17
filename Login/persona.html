@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="persona.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Creación de Usuario</h1>
+        </div>
+    </header>
+    
+    <form action="app.js" method="post">
+        <div id="registro">
+        <input type="name" name="nombre" placeholder="Nombre" size="22" id="nombre">
+        <br>
+        <input type="name" name="apellidos" placeholder="Apellidos" size="22" id="apellidos">
+        <br>
+        <input type="email" name="correo" placeholder="Correo Electronico" size="22" id="correo">
+        <br>
+        <input type="dni" name="dni" placeholder="DNI" size="22" id="dni"><br>
+        <button type="button" onclick="guardarUsuarioNuevo()">Guardar</button>  
+        <button type="button" onclick="mostrarPersona()">Mostrar Persona</button>
+    </div>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
