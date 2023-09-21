@@ -94,15 +94,6 @@ var pwd='admin123'//Creamos la contraseña que vamos a utilizar.
         }else{
             alert('El formato de fecha es erroneo')
         }
-
-        //Esto no funciona "PREGUNTAR"
-        // var formato='AAAA/mm/dd'
-        // if (formato.test(fecha)) {
-        //     persona.fecha=fecha
-        // }else{
-        //     alert('El formato de fecha es erroneo')
-        // }
-
     }
 
     function comprobarArroba(email) {
