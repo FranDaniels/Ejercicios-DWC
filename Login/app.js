@@ -80,6 +80,7 @@ var pwd='admin123'//Creamos la contraseña que vamos a utilizar.
             letras=letras.substring(numeros,numeros+1);//Calculamos la letra 
             if (letras!=letr.toUpperCase()) {
                     confirm('DNI correcto')
+                    persona.dni=dni//Esto es lo que le falta a fran
                 }else{
                     alert('Letra del DNI erronea');
                 }

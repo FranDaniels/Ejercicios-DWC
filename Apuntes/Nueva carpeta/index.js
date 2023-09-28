@@ -33,8 +33,3 @@ console.log(sublista)
 numeros.forEach(function(elemento,index,array){
     console.log(elemento,index)
 })
-
-
-
-
-
