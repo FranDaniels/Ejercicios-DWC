@@ -14,6 +14,7 @@ const numTarjeta=document.getElementById('numeroTarjeta').value
 const cvv=document.getElementById('CVV').value
 
     mensaje.textContent=''
+    
     if (iban.length!==4||!comprobarIban.test(iban)) {
         mensaje.textContent='Se necesita que el Iban contenga 4 caracteres y deben ser ES76 o ES78'
     }else{
@@ -34,4 +35,32 @@ const cvv=document.getElementById('CVV').value
 const numTarjeta=document.getElementById('numeroTarjeta')
 numTarjeta.addEventListener('change', function(){
     document.getElementById('CVV').value = ""
+})
+
+const tarjetas=document.getElementById('tarjetas')
+const datos=document.getElementById('datos')
+const movimientos=document.getElementById('movimientos')
+
+tarjetas.addEventListener('mouseover', function(){
+    tarjetas.style.backgroundColor='lightblue'
+})
+
+datos.addEventListener('mouseover', function(){
+    datos.style.backgroundColor='lightblue'
+})
+
+movimientos.addEventListener('mouseover', function(){
+    movimientos.style.backgroundColor='lightblue'
+})
+
+tarjetas.addEventListener('mouseout', function() {
+    tarjetas.style.backgroundColor = ''
+})
+
+datos.addEventListener('mouseout', function() {
+    datos.style.backgroundColor = ''
+})
+
+movimientos.addEventListener('mouseout', function() {
+    movimientos.style.backgroundColor = ''
 })
